@@ -1,115 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>I Miss You 🤍</title>
+  <meta charset="UTF-8">
+  <title>I Miss You</title>
   <style>
     body {
       margin: 0;
+      padding: 0;
       height: 100vh;
-      background: linear-gradient(135deg, #0e0014, #2a0033);
+      background-color: #8A2BE2; /* purple */
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: Arial, sans-serif;
-      color: #f7dcec;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
       text-align: center;
       overflow: hidden;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.08);
-      padding: 40px 30px;
-      border-radius: 25px;
-      max-width: 340px;
-      box-shadow: 0 0 45px rgba(255, 182, 193, 0.45);
-      animation: fadeUp 1.2s ease forwards;
-      z-index: 2;
-    }
-
-    @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(25px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
     h1 {
-      font-size: 32px;
-      color: #ffb3d9;
+      font-size: 50px;
       margin-bottom: 15px;
-      animation: softPulse 2s ease-in-out infinite;
-    }
-
-    @keyframes softPulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.05); }
-      100% { transform: scale(1); }
+      color: #FFD1FF; /* light pink */
     }
 
     p {
-      font-size: 18px;
-      line-height: 1.7;
-      color: #f3cfe3;
+      font-size: 22px;
+      color: #FFD1FF;
+      opacity: 0.9;
+      margin-bottom: 40px;
     }
 
-    .highlight {
-      margin-top: 15px;
-      font-size: 17px;
-      color: #ffd6eb;
-      font-style: italic;
+    .btn {
+      padding: 14px 40px;
+      background-color: #FFC0CB; /* pink button */
+      color: #8A2BE2;
+      border: none;
+      border-radius: 30px;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
 
+    .btn:hover {
+      transform: translateY(-3px);
+      background-color: #FFB6C1;
+    }
+
+    /* floating hearts */
     .heart {
       position: absolute;
-      bottom: -20px;
-      font-size: 22px;
-      animation: float 8s linear infinite;
-      opacity: 0.7;
+      font-size: 24px;
+      animation: float 6s linear infinite;
+      color: #FFC0CB;
+      opacity: 0;
     }
 
     @keyframes float {
-      0% {
-        transform: translateY(0) scale(1);
-        opacity: 0;
-      }
-      20% {
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-100vh) scale(1.6);
-        opacity: 0;
-      }
+      0% {transform: translateY(100vh) scale(0.5); opacity:0;}
+      20% {opacity:1;}
+      100% {transform: translateY(-10vh) scale(1.2); opacity:0;}
     }
   </style>
 </head>
-
 <body>
 
+  <h1>I miss youuu bohattt 💔</h1>
+  <p>Boondi ke laddoo nai top kiya hai 😋</p>
+
+  <button class="btn" onclick="location.href='miss1.html'">Next →</button>
+
   <!-- floating hearts -->
-  <div class="heart" style="left:12%; animation-delay:0s;">🤍</div>
-  <div class="heart" style="left:30%; animation-delay:2s;">💗</div>
-  <div class="heart" style="left:48%; animation-delay:4s;">💞</div>
-  <div class="heart" style="left:66%; animation-delay:1s;">🤍</div>
-  <div class="heart" style="left:84%; animation-delay:3s;">💓</div>
-
-  <div class="card">
-    <h1>i miss you, Hashim 🤍</h1>
-    <p>
-      in quiet moments.<br>
-      in random thoughts.<br><br>
-      some days just feel incomplete<br>
-      without you, Hashim.
-    </p>
-
-    <div class="highlight">
-      you are my babygirllll,<br>
-      pyaari si 🤍
-    </div>
-  </div>
+  <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+  <div class="heart" style="left:30%; animation-delay:1s;">❤️</div>
+  <div class="heart" style="left:50%; animation-delay:2s;">❤️</div>
+  <div class="heart" style="left:70%; animation-delay:3s;">❤️</div>
+  <div class="heart" style="left:90%; animation-delay:4s;">❤️</div>
 
 </body>
-</html> 
+</html>
