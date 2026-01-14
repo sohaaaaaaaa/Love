@@ -1,80 +1,125 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Hey You 💗</title>
-  <style>
-    body {
-      background: linear-gradient(135deg, #ffd6e8, #fff0f5);
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      padding: 50px 20px;
-    }
+<meta charset="UTF-8">
+<title>For You 💗</title>
 
-    h1 {
-      font-size: 46px;
-      color: #ff2f6d;
-      margin-bottom: 10px;
-    }
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffe6f0, #ffd1e8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
 
-    .subtitle {
-      font-size: 20px;
-      color: #444;
-      margin-bottom: 40px;
-    }
+  /* bow sparkles */
+  .bow {
+    position: absolute;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+    opacity: 0;
+  }
 
-    .card {
-      background: white;
-      border-radius: 25px;
-      padding: 35px 25px;
-      max-width: 420px;
-      margin: auto;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  @keyframes float {
+    0% {
+      transform: translateY(100vh) scale(0.8);
+      opacity: 0;
     }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) scale(1.4);
+      opacity: 0;
+    }
+  }
 
-    p {
-      font-size: 22px;
-      line-height: 1.6;
-      color: #333;
-    }
+  /* center content */
+  .container {
+    text-align: center;
+    z-index: 2;
+  }
 
-    button {
-      margin-top: 30px;
-      padding: 15px 35px;
-      font-size: 18px;
-      border: none;
-      border-radius: 30px;
-      background: #ff4d88;
-      color: white;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+  h1 {
+    color: #ff5fa2;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
 
-    button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(255,77,136,0.4);
-    }
+  /* heart button */
+  .heart-btn {
+    width: 120px;
+    height: 120px;
+    background: #ff5fa2;
+    position: relative;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    animation: pulse 1.8s infinite;
+    margin: auto;
+  }
 
-    .emoji {
-      font-size: 28px;
-    }
-  </style>
+  .heart-btn::before,
+  .heart-btn::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: #ff5fa2;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .heart-btn::before {
+    top: -60px;
+    left: 0;
+  }
+
+  .heart-btn::after {
+    left: 60px;
+    top: 0;
+  }
+
+  .heart-text {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    width: 80px;
+    transform: rotate(45deg);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @keyframes pulse {
+    0% { transform: rotate(-45deg) scale(1); }
+    50% { transform: rotate(-45deg) scale(1.1); }
+    100% { transform: rotate(-45deg) scale(1); }
+  }
+</style>
 </head>
 
 <body>
 
-<h1>hey you <span class="emoji">💗</span></h1>
-<div class="subtitle">pls read this slowly</div>
+<!-- twinkling bows -->
+<div class="bow" style="left:10%; animation-delay:0s;">🎀</div>
+<div class="bow" style="left:25%; animation-delay:2s;">🎀</div>
+<div class="bow" style="left:40%; animation-delay:4s;">🎀</div>
+<div class="bow" style="left:60%; animation-delay:1s;">🎀</div>
+<div class="bow" style="left:75%; animation-delay:3s;">🎀</div>
+<div class="bow" style="left:90%; animation-delay:5s;">🎀</div>
 
-<div class="card">
-  <p>
-    this is something small,<br>
-    but it means a lot to me 🫶<br><br>
-    i hope you like it.
-  </p>
+<div class="container">
+  <h1>hey… 💗</h1>
 
   <a href="sorry.html">
-    <button>tap here 💌</button>
+    <div class="heart-btn">
+      <div class="heart-text">click<br>here</div>
+    </div>
   </a>
 </div>
 
