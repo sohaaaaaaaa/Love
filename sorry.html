@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome 💕</title>
+  <title>I'm Sorry 🫶</title>
   <style>
     body {
-      background: #ffd6e8;
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #1a001a, #330033);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: Arial, sans-serif;
+      color: #ffd6e8;
       text-align: center;
-      padding: 40px;
+      overflow: hidden;
     }
-    h1 { font-size: 42px; color: #ff2f6d; }
-    p { font-size: 22px; }
+
+    .box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 105, 180, 0.4);
+      max-width: 320px;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 34px;
+      color: #ff80bf;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
     button {
-      padding: 15px 30px;
-      font-size: 18px;
+      margin-top: 20px;
+      padding: 12px 25px;
       border: none;
-      border-radius: 15px;
-      background: #ff4d88;
+      border-radius: 25px;
+      background: #ff4da6;
       color: white;
+      font-size: 16px;
       cursor: pointer;
-      margin-top: 30px;
+    }
+
+    button:hover {
+      background: #ff1a8c;
+    }
+
+    /* 💗 Floating hearts */
+    .heart {
+      position: absolute;
+      bottom: -20px;
+      font-size: 20px;
+      color: #ff80bf;
+      animation: floatUp 6s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(1.5);
+        opacity: 0;
+      }
     }
   </style>
 </head>
-
 <body>
 
-<h1>Welcome 💗</h1>
+  <!-- Hearts -->
+  <div class="heart" style="left: 10%; animation-delay: 0s;">💗</div>
+  <div class="heart" style="left: 30%; animation-delay: 2s;">💖</div>
+  <div class="heart" style="left: 50%; animation-delay: 4s;">💞</div>
+  <div class="heart" style="left: 70%; animation-delay: 1s;">💕</div>
+  <div class="heart" style="left: 90%; animation-delay: 3s;">💓</div>
 
-<p>
-This little website  
-is made just for you.
-</p>
+  <div class="box">
+    <h1>I'm sorry 🫶</h1>
+    <p>
+      I never meant to hurt you.<br>
+      If something I did made you sad,<br>
+      please know that it truly matters to me.
+    </p>
 
-<a href="iloveyou.html" class="btn">Continue 💗</a>
+    <button onclick="location.href='iloveyou.html'">
+      Continue 💌
+    </button>
+  </div>
 
 </body>
 </html>
