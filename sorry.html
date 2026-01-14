@@ -1,27 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Hey 🤍</title>
+<title>Sorry 🖤</title>
+
+<!-- different emotional font -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
   body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(135deg, #ffe6f0, #ffd1e8);
+    background: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', sans-serif;
     overflow: hidden;
+    color: white;
   }
 
   /* floating bows */
   .bow {
     position: absolute;
-    font-size: 20px;
-    animation: float 6s linear infinite;
+    font-size: 22px;
+    color: white;
+    animation: float 7s linear infinite;
     opacity: 0;
   }
 
@@ -39,25 +42,46 @@
     }
   }
 
-  .container {
+  .card {
     text-align: center;
+    padding: 40px 30px;
+    max-width: 360px;
     z-index: 2;
+    animation: fadeIn 1.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 
   h1 {
-    font-size: 38px;
-    color: #ff5fa2;
-    margin-bottom: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
   }
 
   .btn {
-    padding: 14px 40px;
-    background: #ff5fa2;
-    color: white;
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 34px;
+    background: white;
+    color: black;
     text-decoration: none;
     border-radius: 30px;
-    font-size: 16px;
-    box-shadow: 0 8px 20px rgba(255, 95, 162, 0.5);
+    font-size: 15px;
     transition: transform 0.3s ease;
   }
 
@@ -69,16 +93,26 @@
 
 <body>
 
-<!-- bows -->
+<!-- white bows -->
 <div class="bow" style="left:10%; animation-delay:0s;">🎀</div>
-<div class="bow" style="left:30%; animation-delay:2s;">🎀</div>
-<div class="bow" style="left:50%; animation-delay:4s;">🎀</div>
-<div class="bow" style="left:70%; animation-delay:1s;">🎀</div>
-<div class="bow" style="left:90%; animation-delay:3s;">🎀</div>
+<div class="bow" style="left:25%; animation-delay:2s;">🎀</div>
+<div class="bow" style="left:40%; animation-delay:4s;">🎀</div>
+<div class="bow" style="left:60%; animation-delay:1s;">🎀</div>
+<div class="bow" style="left:75%; animation-delay:3s;">🎀</div>
+<div class="bow" style="left:90%; animation-delay:5s;">🎀</div>
 
-<div class="container">
-  <h1>hey baby girl 🤍</h1>
-  <a href="sorry.html" class="btn">next</a>
+<div class="card">
+  <h1>
+    Bohattttt badaaaa walaaaaaa<br>
+    sorrryyyyyyyyyyyyyyy
+  </h1>
+
+  <p>
+    Maaf karo maaf karo<br>
+    dil ko apnai saaf karo 😭😔
+  </p>
+
+  <a href="iloveyou.html" class="btn">next</a>
 </div>
 
 </body>
