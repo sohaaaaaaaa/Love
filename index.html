@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>For You 💗</title>
+<title>Hey 🤍</title>
 
 <style>
   body {
@@ -16,7 +16,7 @@
     overflow: hidden;
   }
 
-  /* bow sparkles */
+  /* floating bows */
   .bow {
     position: absolute;
     font-size: 20px;
@@ -38,89 +38,46 @@
     }
   }
 
-  /* center content */
   .container {
     text-align: center;
     z-index: 2;
   }
 
   h1 {
+    font-size: 38px;
     color: #ff5fa2;
-    font-size: 34px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
-  /* heart button */
-  .heart-btn {
-    width: 120px;
-    height: 120px;
+  .btn {
+    padding: 14px 40px;
     background: #ff5fa2;
-    position: relative;
-    transform: rotate(-45deg);
-    cursor: pointer;
-    animation: pulse 1.8s infinite;
-    margin: auto;
-  }
-
-  .heart-btn::before,
-  .heart-btn::after {
-    content: "";
-    width: 120px;
-    height: 120px;
-    background: #ff5fa2;
-    border-radius: 50%;
-    position: absolute;
-  }
-
-  .heart-btn::before {
-    top: -60px;
-    left: 0;
-  }
-
-  .heart-btn::after {
-    left: 60px;
-    top: 0;
-  }
-
-  .heart-text {
-    position: absolute;
-    top: 35px;
-    left: 20px;
-    width: 80px;
-    transform: rotate(45deg);
     color: white;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    pointer-events: none;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0 8px 20px rgba(255, 95, 162, 0.5);
+    transition: transform 0.3s ease;
   }
 
-  @keyframes pulse {
-    0% { transform: rotate(-45deg) scale(1); }
-    50% { transform: rotate(-45deg) scale(1.1); }
-    100% { transform: rotate(-45deg) scale(1); }
+  .btn:hover {
+    transform: translateY(-3px);
   }
 </style>
 </head>
 
 <body>
 
-<!-- twinkling bows -->
+<!-- bows -->
 <div class="bow" style="left:10%; animation-delay:0s;">🎀</div>
-<div class="bow" style="left:25%; animation-delay:2s;">🎀</div>
-<div class="bow" style="left:40%; animation-delay:4s;">🎀</div>
-<div class="bow" style="left:60%; animation-delay:1s;">🎀</div>
-<div class="bow" style="left:75%; animation-delay:3s;">🎀</div>
-<div class="bow" style="left:90%; animation-delay:5s;">🎀</div>
+<div class="bow" style="left:30%; animation-delay:2s;">🎀</div>
+<div class="bow" style="left:50%; animation-delay:4s;">🎀</div>
+<div class="bow" style="left:70%; animation-delay:1s;">🎀</div>
+<div class="bow" style="left:90%; animation-delay:3s;">🎀</div>
 
 <div class="container">
-  <h1>hey… 💗</h1>
-
-  <a href="sorry.html">
-    <div class="heart-btn">
-      <div class="heart-text">click<br>here</div>
-    </div>
-  </a>
+  <h1>hey baby girl 🤍</h1>
+  <a href="sorry.html" class="btn">next</a>
 </div>
 
 </body>
