@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 🤍</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ffd1dc, #c084fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Georgia, serif;
+      color: #fff;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.18);
+      padding: 35px;
+      border-radius: 22px;
+      width: 85%;
+      max-width: 420px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    }
+
+    button {
+      background: #ffffff;
+      color: #7c3aed;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 25px;
+    }
+
+    .message {
+      display: none;
+      margin-top: 25px;
+      font-size: 18px;
+      line-height: 1.6;
+      animation: fadeIn 1.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Hey 🤍</h2>
+    <p>Please click this when you’re calm</p>
+    <button onclick="showMessage()">Open</button>
+
+    <div class="message" id="msg">
+      <p>
+        I’m really sorry.  
+        Truly.  
+        <br><br>
+        I know I hurt you, and I hate that I caused you pain.  
+        I’m not trying to explain or defend myself.  
+        <br><br>
+        I just want you to know that I love you.  
+        You matter to me more than my ego, more than my pride.  
+        I choose you, always.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("msg").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
